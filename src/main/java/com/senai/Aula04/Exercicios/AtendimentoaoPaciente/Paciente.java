@@ -3,10 +3,12 @@ package com.senai.Aula04.Exercicios.AtendimentoaoPaciente;
 public class Paciente {
     private String nome;
     private int idade;
+    private String segmentoConsulta;
 
-    public Paciente(String nome, int idade) {
+    public Paciente(String nome, int idade, String segmentoConsulta) {
         this.nome = nome;
         this.idade = idade;
+        this.segmentoConsulta = segmentoConsulta;
     }
 
     public String getNome() {
@@ -25,7 +27,15 @@ public class Paciente {
         this.idade = idade;
     }
 
-    public void exibirInformacoes(){
-        System.out.printf("\n Nome do Paciente: %s, \n Idade do Paciente: ", nome, idade);
+    public String getSegmentoConsulta() {
+        return segmentoConsulta;
+    }
+
+    public void setSegmentoConsulta(String segmentoConsulta) {
+        this.segmentoConsulta = segmentoConsulta;
+    }
+
+    public void exibirDados(){
+        System.out.printf("Os dados do paciente são: %s, idade %d, e o tipo é %s" + nome, idade, segmentoConsulta);
     }
 }
