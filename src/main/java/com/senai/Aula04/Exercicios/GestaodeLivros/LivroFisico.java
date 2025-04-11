@@ -1,4 +1,4 @@
-package com.senai.Aula05.Exercicios.GestaodeLivros;
+package com.senai.Aula04.Exercicios.GestaodeLivros;
 
 public class LivroFisico extends Livro{
     private int numerodePagina;
