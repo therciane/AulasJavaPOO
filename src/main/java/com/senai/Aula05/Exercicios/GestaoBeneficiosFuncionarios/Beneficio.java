@@ -1,14 +1,23 @@
 package com.senai.Aula05.Exercicios.GestaoBeneficiosFuncionarios;
 
 public class Beneficio {
-    private double salario;
-    protected double calcularDesconto;
+    protected String nomeFuncionario;
+    protected String cargoFuncionario;
+    protected int idade;
+    protected double salario;
 
-    public void exibirDetalhes(){
-        System.out.println("O Salario do funcionario com os devidos descontos é:  " + salario);
+    public Beneficio(String nomeFuncionario, String cargoFuncionario, int idade, double salario) {
+        this.nomeFuncionario = nomeFuncionario;
+        this.cargoFuncionario = cargoFuncionario;
+        this.idade = idade;
+        this.salario = salario;
     }
 
-    public double calcularDesconto(double remuneracao) {
-        return salario - calcularDesconto(3500);
+    public double calcularDesconto(int salario){
+        return salario;
+    }
+
+    public void mostrarInformacoes(){
+        System.out.println("Os dados do funcionario é: " + nomeFuncionario + idade + salario + cargoFuncionario);
     }
 }
