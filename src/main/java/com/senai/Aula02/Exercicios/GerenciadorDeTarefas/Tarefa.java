@@ -10,6 +10,7 @@ public class Tarefa {
     }
 
     public Tarefa(String nomeTarefa) {
+        this.nomeTarefa = nomeTarefa;
     }
 
     public String getNomeTarefa() {
